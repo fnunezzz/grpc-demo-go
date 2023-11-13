@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "github.com/fnunezzz/grpc-demo-go/internal/proto";
+
+message HealthCheckRequest {}
+
+message HealthCheckResponse {
+    string time = 1;
+    bool status = 2;
+}
+
+
+service App {
+    rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+}
