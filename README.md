@@ -8,7 +8,7 @@ This is a simple grpc demo project made in go with JWT authentication.
 go mod tidy
 ```
 
-You will also need to import the proto in your application of choice files. I personally prefer [Postman](https://www.postman.com/) and [you can follow postman tutorial here](https://learning.postman.com/docs/sending-requests/grpc/grpc-request-interface/). These proto files are located at `internal/proto/build`.
+You will also need to import the proto files in your application of choice. I personally prefer [Postman](https://www.postman.com/) and [you can follow postman tutorial here](https://learning.postman.com/docs/sending-requests/grpc/grpc-request-interface/). These proto files are located at `internal/proto/build`.
 
 ## Running
 
