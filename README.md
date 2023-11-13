@@ -1,20 +1,19 @@
 # grpc-demo-go
 
-This is a simple grpc demo project made in go.
+This is a simple grpc demo project made in go with JWT authentication.
 
 ## Instalation
 
 ```bash
-# Run in command line
 go mod tidy
 ```
 
-You will also need to import the proto files in your application of choice. I personally prefer [Postman](https://www.postman.com/). They are located at `internal/proto/build`. [You can follow postman tutorial here](https://learning.postman.com/docs/sending-requests/grpc/grpc-request-interface/)
+You will also need to import the proto in your application of choice files. I personally prefer [Postman](https://www.postman.com/) and [you can follow postman tutorial here](https://learning.postman.com/docs/sending-requests/grpc/grpc-request-interface/). These proto files are located at `internal/proto/build`.
 
 ## Running
 
 ```bash
-# Start a local postgres instance
+# Start a local postgres instance and run migrations located at cmd/migration
 docker-compose up
 ```
 
@@ -52,7 +51,7 @@ You should now be able to start making API calls.
 
 Header: `Authorization: Bearer ${token}`
 
-## Testing
+## Test
 
 ```bash
 make test
